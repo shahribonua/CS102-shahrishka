@@ -3,82 +3,99 @@
 using namespace std;
 
 int main() {
-    cout << "Problem 1: Print an ID Card\n\n";
-    cout << "+---------------------------------------+\n";
-    cout << "|          STUDENT ID CARD              |\n";
-    cout << "+---------------------------------------+\n";
-    cout << "| Name:       Shahribonu                |\n";
-    cout << "| 250206:     Lab2_YOUR_ID              |\n";
-    cout << "| Course:     CS102                     |\n";
-    cout << "| Term:       SPRING 2026               |\n";
-    cout << "+---------------------------------------+\n";
+   int intNumber = 25;
+
+   float floatNumber = 3.14f;
+
+   double doubleNumber = 45.1234;
+
+   bool boolean = true;
+
+   char charName = 'A';
+
+   cout << "intNumber = " << intNumber
+        << ", Size = " << sizeof(intNumber) << " bytes" << endl;
+
+   cout << "floatNumber = " << floatNumber
+        << ", Size = " << sizeof(floatNumber) << " bytes" << endl;
+
+   cout << "doubleNumber = " << doubleNumber
+        << ", Size = " << sizeof(doubleNumber) << " bytes" << endl;
+
+   cout << "boolean = " << boolean
+        << ", Size = " << sizeof(boolean) << " bytes" << endl;
+
+   cout << "charName = " << charName
+        << ", Size = " << sizeof(charName) << " byte" << endl;
+
+   cout<< "problem 2" << right << setw(10) << endl;
+     cout << "“I’m standing” on the edge of some crazy cliff." << endl;
+     cout << "What I have to do, I have to catch everybody\\" << endl;
+     cout << "if they start to go over the cliff—I mean\\" << endl;
+     cout << "\\if they’re running and they don’t look" << endl;
+     cout << "where they’re going I have to come out" << endl;
+     cout << "from somewhere and catch them." << endl;
+
+     cout<< "problem 3" << right << setw(10) << endl;
+     int a = 189;
+     char b = 'B';
+     float c = a/3;
+     char d = (a+b)/5;
+     float e = a/10 - 1;
+     cout << char(int(b)+e) << endl;
+
+
+     cout<< "problem 4" << right << setw(10) << endl;
+     int value1, value2, result;
+     cout <<"num 1 ";
+     cin>> value1;
+     cout <<"num 2 ";
+     cin>> value2;
+     result = value1 + value2;
+
+     cout << "result "<<result << endl;
+
+
+     cout<< "problem 5" << right << setw(10) << endl;
+     int N;
+
+     cin >> N;
+
+     cout << N % 100 << endl;
+
+     cout<< "problem 6" << right << setw(10) << endl;
+     double x, y, z;
+     cin >> x >> y;
+     z = (3 * (x * x + 3)) / (y / 4.0) + 3;
+     cout << "t = " << z << endl;
+
+     cout<< "problem 7" << right << setw(10) << endl;
+     const double PI = 3.14159265358979323846;
+     double diameter;
+     cin>> diameter;
+     double area = PI * diameter * diameter;
+     cout << " Area of the sphere : " << area << endl;
+
+     cout<< "problem 8" << right << setw(10) << endl;
+     double v0, v1, t;
+     cin >> v0 >> v1 >> t;
+     double a1 = (v1-v0)/t;
+     cout << a1 << endl;
 
 
 
-    cout << "Problem 2: Escape Sequences Practice\n";
-    cout << " He said:\"I like C++\""<<endl;
-    cout << " C:\\Users\\Student\\CS102"<<endl;
-    cout << " Name\t Score\t"<<endl;
-    cout << " Shahri\t 95\t"<<endl;
-    cout << " Neyla\t 91\t"<<endl;
-
-    cout << "+-----------+-----------+-----------+-----------+-----------+\n";
-    cout << "|    Time   |    Mon    |    Tue     |    Wed    |    Thu   |\n";
-    cout << "+-----------+-----------+-----------+-----------+-----------+\n";
-    cout << "|   09:00   |   CS102   |    Math   |   CS102   |  Physics  |\n";
-    cout << "|   11:00   |  English  |  CS Lab   |   Math    |   CS102   |\n";
-    cout << "|   14:00   |  Physics  |  English  |   Free    |    Math   |\n";
-    cout << "+-----------+-----------+-----------+-----------+-----------+\n";
 
 
-    cout << "+--------------------------------------+\n";
-    cout << "|           CS102 TOOL MENU            |\n";
-    cout << "+--------------------------------------+\n";
-    cout << "|           1) Print ID Card           |\n";
-    cout << "|           2) Show Schedule           |\n";
-    cout << "|           3) Generate Receipt        |\n";
-    cout << "|           4) About                   |\n";
-    cout << "|           5) Exit                    |\n";
-    cout << "+--------------------------------------+\n";
-    cout << "|      Author: Shahribonu Lab #2       |\n";
-    cout << "+--------------------------------------+\n";
-
-    cout << left << setw(12) << "Item"
-<< right << setw(10) << "Price" << endl;
-    cout << left << setw(12) << "Pen"
-    << right << setw(10) << fixed << setprecision(2) << 1.5 << endl;
-    cout << left << setw(12) << "Notebook"
-    << right << setw(10) << fixed << setprecision(2) << 4.25 << endl;
 
 
-    cout << fixed << setprecision(2);
 
-    cout << "=========== RECEIPT ===========" << endl;
-    cout << left << setw(10) << "Item"
-         << setw(5) << "Qty"
-         << setw(8) << "Price"
-         << setw(10) << "Subtotal" << endl;
 
-    cout << left << setw(10) << "item1"
-         << setw(5) << "1"
-         << setw(8) << "4.50"
-         << setw(10) << "9.00" << endl;
 
-    cout << left << setw(10) << "item2"
-         << setw(5) << "2"
-         << setw(8) << "2.00"
-         << setw(10) << "sub2" << endl;
-
-    cout << "-------------------------------" << endl;
-    cout << right<< setw(20) << "Subtotal:"
-         << setw(20) << "11.00" <<endl;
-    cout <<right << setw(22) << "Tax (12%): "
-         << setw(18) << "1.32" << endl;
-    cout << right << setw(18) << "Total: "
-         << setw(22) << "12.32" << endl;
-     cout << "===============================" << endl;
-    return 0;
+   return 0;
 }
+
+
+
 
 
 
